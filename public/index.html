@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список товаров</title>
+  </head>
+  <body>
+    <h1>Список товаров</h1>
+    <form name="productsForm">
+      <input type="hidden" name="id" value="0" />
+      <p>
+        <label>Название: <input name="name" /> </label>
+      </p>
+      <p>
+        <label>Количество: <input name="quantity" type="number" /> </label>
+      </p>
+      <p>
+        <button id="submitBtn" type="submit">Сохранить</button
+        ><button id="resetBtn">Сбросить</button>
+      </p>
+    </form>
+    <div id="products"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
